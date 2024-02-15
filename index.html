@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <a id="link" href="https://subthingsforme.ir"></a>
+    <a id="link" href="https://subthingsforme.ir">a</a>
     <script>
-        var variableToCancelInterval = setInterval(function(){
-  $("link").click();
+        $(document).ready(function(){
+            setInterval(function(){
+  $("#link").click();
 }, 5000);
+        })
     </script>
 </body>
 </html>
